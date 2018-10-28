@@ -14,6 +14,7 @@ public class HomeController {
 	public String aboutMe() {
     	
 		return "JUnit 5 and Spring Boot Example.";
+
 	}
     
 }

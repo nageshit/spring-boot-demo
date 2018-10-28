@@ -52,9 +52,9 @@ public class DemoApplicationTests {
 	
 	@Test
 	void studentsTest() {
-		List students = this.testRestTemplate.getForObject("/students", List.class);
+		List<Student> students = this.testRestTemplate.getForObject("/students", List.class);
 		System.out.println("Students:"+students);
-		assertEquals(3, students.size());
+		assertEquals(7, students.size());
 	}
 	
 	@Test
